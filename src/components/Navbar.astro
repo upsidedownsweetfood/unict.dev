@@ -1,0 +1,38 @@
+---
+---
+
+<nav>
+  <span>
+    <a href="/" id="home-button">Unict.dev</a>
+    <a href="/blog">Blog</a>
+    <a href="/about">Info</a>
+  </span>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+
+    padding: 12px;
+    background: var(--navbar-bg)
+  }
+  nav span {
+    display: flex;
+    gap: 12px;
+    
+    font-family: "Jost Light"
+  }
+
+  nav a {
+    color: var(--navbar-fg);
+    font-size: 32px;
+    text-decoration: none;
+  }
+
+  #home-button {
+    font-weight: bolder;
+  }
+</style>

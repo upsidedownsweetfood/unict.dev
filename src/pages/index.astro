@@ -1,5 +1,31 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import "../styles/global.css"
+
+import Navbar from "../components/Navbar.astro"
 ---
 
-<Layout title="unict.dev">Home</Layout>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="unict.dev's home page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>unict.dev</title>
+  </head>
+  
+  <body>
+    <Navbar />
+    <p>lorem ipsum lorem ipsum this is just example text to get some ideas about
+      the website
+    </p>
+  </body>
+</html>
+
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    
+    background: var(--page-bg)
+  }
+</style>

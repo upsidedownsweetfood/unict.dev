@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Jost Light";
+  src: url("/Fonts/Jost/Jost-300-Light.ttf")
+}
+
+:root {
+  --navbar-bg: #293136;
+  --navbar-fg: #A7C080;
+  --on-navbar-container-bg: black;
+  --on-navbar-container-fg: white;
+
+  --page-bg: #333C43;
+}
