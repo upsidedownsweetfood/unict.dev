@@ -5,7 +5,7 @@
   const navbar = document.getElementById("bar");
   navbar.classList.add("nav-no-bg")
   window.onscroll = () => {
-    if (window.scrollY > 200) navbar.classList.remove("nav-no-bg")
+    if (window.scrollY > 100) navbar.classList.remove("nav-no-bg")
     else navbar.classList.add("nav-no-bg")
   }
 </script>
@@ -30,7 +30,7 @@
     box-sizing: border-box;
     padding: 12px;
     
-    transition: 0.15s ease-in-out;
+    transition: 0.1s ease-in-out;
     background: var(--navbar-bg)
   }
   
@@ -43,7 +43,7 @@
     align-items: center;
     gap: 12px;
     
-    font-family: "Jost Light"
+    font-family: "Rubik", sans-serif;
   }
 
   nav a {

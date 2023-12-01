@@ -2,6 +2,7 @@
 import "../styles/global.css"
 
 import Navbar from "../components/Navbar.astro"
+import HBox from "../components/HBox.astro"
 ---
 
 <html lang="it">
@@ -15,9 +16,12 @@ import Navbar from "../components/Navbar.astro"
   
   <body>
     <Navbar />
-    <p>lorem ipsum lorem ipsum this is just example text to get some ideas about
-      the website
-    </p>
+    <main>
+      <HBox>
+	<p>meow</p>
+	meow
+      </HBox>
+    </main>
   </body>
 </html>
 
@@ -28,8 +32,12 @@ import Navbar from "../components/Navbar.astro"
     
     background: var(--page-bg)
   }
-  
-  p {
-    font-size: 150px;
+
+  main {
+    display: flex; 
+    justify-content: center;
+    
+    margin-top: 20px;
   }
+  
 </style>
