@@ -1,7 +1,16 @@
 ---
 ---
 
-<nav>
+<script>
+  const navbar = document.getElementById("bar");
+  navbar.classList.add("nav-no-bg")
+  window.onscroll = () => {
+    if (window.scrollY > 200) navbar.classList.remove("nav-no-bg")
+    else navbar.classList.add("nav-no-bg")
+  }
+</script>
+
+<nav id="bar">
   <span>
     <a href="/" id="home-button">Unict.dev</a>
     <a href="/blog">Blog</a>
@@ -11,16 +20,27 @@
 
 <style>
   nav {
+    position: sticky;
+    top:0;
+
     display: flex;
     flex-direction: row;
     align-items: center;
+    
     box-sizing: border-box;
-
     padding: 12px;
+    
+    transition: 0.15s ease-in-out;
     background: var(--navbar-bg)
   }
+  
+  .nav-no-bg {
+    background-color: transparent;
+  }
+
   nav span {
     display: flex;
+    align-items: center;
     gap: 12px;
     
     font-family: "Jost Light"
@@ -28,11 +48,12 @@
 
   nav a {
     color: var(--navbar-fg);
-    font-size: 32px;
+    font-size: 24px;
     text-decoration: none;
   }
 
   #home-button {
     font-weight: bolder;
+    margin-right: 5px;
   }
 </style>
