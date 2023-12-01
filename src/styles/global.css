@@ -6,5 +6,13 @@
   --on-navbar-container-bg: black;
   --on-navbar-container-fg: white;
 
-  --page-bg: #333C43;
+  --page-bg: #3A464C;
+  --page-fg: #D3C6AA;
+  
+  --shadow-color: #333C43;
+
+  --button-bg: #48584E;
+  --button-fg: #A7C080;
+  --button-hover-bg: #A7C080;
+  --button-hover-fg: #48584E;
 }

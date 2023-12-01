@@ -3,6 +3,8 @@ import "../styles/global.css"
 
 import Navbar from "../components/Navbar.astro"
 import HBox from "../components/HBox.astro"
+import VBox from "../components/VBox.astro"
+import Button from "../components/Button.astro"
 ---
 
 <html lang="it">
@@ -18,8 +20,11 @@ import HBox from "../components/HBox.astro"
     <Navbar />
     <main>
       <HBox>
-	<p>meow</p>
-	meow
+	<VBox>
+	  <p class="page-text">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
+	  <Button></Button>
+	</VBox>
+	<img src="/Home/home_code_example.jpeg " class="code-example-pic">
       </HBox>
     </main>
   </body>
@@ -38,6 +43,30 @@ import HBox from "../components/HBox.astro"
     justify-content: center;
     
     margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
-  
+
+  .page-text {
+    font-size: 1.2em;
+    font-family: Rubik;
+
+    color: var(--page-fg);
+  }
+
+  .code-example-pic {
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 300px;
+
+    margin-left: 100px;
+
+    box-shadow: 10px 10px 0px var(--shadow-color);
+  }
+
+  @media (max-width: 920px) {
+    .code-example-pic {
+      display: none;
+    }
+  }
 </style>
